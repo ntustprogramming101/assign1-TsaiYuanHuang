@@ -67,9 +67,11 @@ void draw(){
   }
   
   
-  //soldier animation
+  //soldier animation  
+  xSoldier += 3;
+  if(xSoldier >= 640){
+    xSoldier = -80;
+  }
   image(soldierImg, xSoldier, ySoldier);
-  xSoldier ++;
-  xSoldier %= 640;
   
 }
